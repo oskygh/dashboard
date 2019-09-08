@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <title>Niqao - Lender Dashboard</title>
+    <meta content="Admin Dashboard" name="description">
+    <meta content="Themesbrand" name="author">
+    <link rel="shortcut icon" href="assets/images/favicon.ico?v2">
+    <!--Chartist Chart CSS -->
+    <link rel="stylesheet" href="https://themesbrand.com/veltrix/layouts/plugins/chartist/css/chartist.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Begin page -->
+    <div id="wrapper">
+        <!-- Top Bar Start -->
+        <div class="topbar">
+            <!-- LOGO -->
+            <div class="topbar-left"><a href="index.html" class="logo"><span><img src="assets/images/Niqao_white-11.png" alt="" height="100"> </span><i><img src="assets/images/Niqao_white-11.png" alt="" height="50"></i></a></div>
+            <nav class="navbar-custom">
+                <ul class="navbar-right list-inline float-right mb-0">
+                    <li class="dropdown notification-list list-inline-item d-none d-md-inline-block">
+                        <form role="search" class="app-search">
+                            <div class="form-group mb-0">
+                                <input type="text" class="form-control" placeholder="Search..">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <!-- full screen -->
+                    <li class="dropdown notification-list list-inline-item d-none d-md-inline-block"><a class="nav-link waves-effect" href="#" id="btn-fullscreen"><i class="mdi mdi-fullscreen noti-icon"></i></a></li>
+                    <!-- notification -->
+                    <li class="dropdown notification-list list-inline-item"><a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"><i class="mdi mdi-bell-outline noti-icon"></i> <span class="badge badge-pill badge-danger noti-icon-badge">3</span></a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                            <!-- item-->
+                            <h6 class="dropdown-item-text">Notifications (258)</h6>
+                            <div class="slimscroll notification-item-list">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                    <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                    <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-warning"><i class="mdi mdi-message-text-outline"></i></div>
+                                    <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-info"><i class="mdi mdi-glass-cocktail"></i></div>
+                                    <p class="notify-details">Your item is shipped<span class="text-muted">It is a long established fact that a reader will</span></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                    <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-danger"><i class="mdi mdi-message-text-outline"></i></div>
+                                    <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                </a>
+                            </div>
+                            <!-- All--><a href="javascript:void(0);" class="dropdown-item text-center text-primary">View all <i class="fi-arrow-right"></i></a></div>
+                    </li>
+                    <li class="dropdown notification-list list-inline-item">
+                        <div class="dropdown notification-list nav-pro-img">
+                            <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"><img src="assets/images/users/user-4.jpg" alt="user" class="rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+                                <!-- item--><a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5"></i> Profile</a> <a class="dropdown-item" href="#"><i class="mdi mdi-wallet m-r-5"></i> My Wallet</a> <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings m-r-5"></i> Settings</a> <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5"></i> Lock screen</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Logout</a></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-inline menu-left mb-0">
+                    <li class="float-left">
+                        <button class="button-menu-mobile open-left waves-effect"><i class="mdi mdi-menu"></i></button>
+                    </li>
+                    <li class="d-none d-sm-block">
+                        <div class="dropdown pt-3 d-inline-block"><a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Top Bar End -->
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left side-menu">
+            <div class="slimscroll-menu" id="remove-scroll">
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu" id="side-menu">
+                        <li class="menu-title">Main</li>
+                        <li><a href="index.html" class="waves-effect"><i class="ti-home"></i><span>Dashboard</span></a></li>
+                        <li><a href="request.html" class="waves-effect"><i class="ti-email"></i><span class="badge badge-primary badge-pill float-right">2</span><span> Request</span></a></li>
+                         <li><a href="rules.html" class="waves-effect"><i class="ti-panel"></i></span><span> Credit Rules</span></a></li>
+                        
+                        
+                </div>
+                <!-- Sidebar -->
+                <div class="clearfix"></div>
+            </div>
+            <!-- Sidebar -left -->
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">Credit Rules</h4>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="javascript:void(0);">AFB</a></li>
+                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Gredit Rules</a></li>
+                                    <li class="breadcrumb-item active">Credit Rules</li>
+                                </ol>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="float-right d-none d-md-block">
+                                    <div class="dropdown">
+                                        <button class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-settings mr-2"></i> Settings</button>
+                                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="mt-0 header-title">Credit Rules</h4>
+                                    <p class="text-muted m-b-30"> Request will be filtered according to the rules you set</p>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Must be an account-holder :</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control">
+                                                <option>Select</option>
+                                                <option>Yes</option>
+                                                <option>No</option> 
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Must be a salary worker :</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control">
+                                                <option>Select</option>
+                                                <option>Yes</option>
+                                                <option>No</option> 
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Must have salary account with you :</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control">
+                                                <option>Select</option>
+                                                <option>Yes</option>
+                                                <option>No</option> 
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                
+                                        <label for="example-text-input" class="col-sm-2 col-form-label">Minimum Wage</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text"  id="example-text-input">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-search-input" class="col-sm-2 col-form-label">Minimum Age</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text"  id="example-search-input">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-search-input" class="col-sm-2 col-form-label">Maximum  Age</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text"  id="example-search-input">
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-lg btn-block waves-effect waves-light">Set Rules</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- content -->
+            <footer class="footer">© 2019 Niqao <span class="d-none d-sm-inline-block">- Built with <i class="mdi mdi-heart text-danger"></i> by Niqao Technologies</span>.</footer>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- END wrapper -->
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/waves.min.js"></script>
+    <!--Chartist Chart-->
+    <script src="https://themesbrand.com/veltrix/layouts/plugins/chartist/js/chartist.min.js"></script>
+    <script src="https://themesbrand.com/veltrix/layouts/plugins/chartist/js/chartist-plugin-tooltip.min.js"></script>
+    <!-- peity JS -->
+    <script src="https://themesbrand.com/veltrix/layouts/plugins/peity-chart/jquery.peity.min.js"></script>
+    <script src="assets/pages/dashboard.js"></script>
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+
+</body>
+<!-- Mirrored from themesbrand.com/veltrix/layouts/vertical/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Sep 2019 21:49:27 GMT -->
+
+</html>
